@@ -74,6 +74,10 @@ body{
     filter: drop-shadow(-20px -2px rgba(0, 0, 0, 0.321));
 }
 
+#sidebar img:hover{
+    filter: drop-shadow(5px 6px rgba(172, 172, 172, 0.338));
+}
+
 #box1{
     background-color: #006622 ;
     background-image: url(./images/drawer.jpg);
