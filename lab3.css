@@ -1,0 +1,26 @@
+body{
+    background-color: rgba(128, 128, 128, 0.395);
+    font-family: "Times New Roman", Times, serif;
+}
+h2{
+    color: red;
+    text-align: center;
+    margin: 20px;
+}
+#form{
+    display: flex;
+    justify-content: center;
+}
+#table{
+    background-color: aquamarine;
+    border: solid 2px black;
+    margin: 5px 5px 5px 50px;
+    
+}
+td{
+    border: solid 2px black;
+    padding: 5px;
+    margin-left: 20px !important;
+}
+
+
