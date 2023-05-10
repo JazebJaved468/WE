@@ -7,7 +7,7 @@
 }
 
 body{
-    background-image: url(./bg.jpg);
+    background-image: url(./bg1.jpg);
 }
 
 /* Navbar starts */
@@ -139,6 +139,11 @@ main{
     color: black;
     padding: 1.3vh 3vw;
     border-radius: 10px;
+    cursor: pointer;
+}
+
+.join-us:hover{
+    background-color: rgb(247, 176, 45);
 }
 /* text content ends */
 
@@ -175,6 +180,11 @@ main{
     border-radius: 10px;
     padding: 10px 20px;
     margin-top: 2vh;
+    cursor: pointer;
+}
+
+.login-form button:hover{
+    background-color: rgb(247, 176, 45);
 }
 
 .login-form p{
