@@ -119,25 +119,22 @@ main .item-list h1{
     font-size: 1.8em;
     font-weight: 400;
     color: #089883;
-    margin-bottom: 2vh;
+    margin-bottom: 1vh;
 }
 
 main .item-list .date{
     text-decoration: underline dotted;
 }
 
-main .text-img{
-    display: flex;
-}
-
 main .item-list p{
     font-size: 1.2em;
     text-align: justify;
-    padding: 0 1vw 0 0 ;
+    padding: 1.5vh 1vw 0 0 ;
 }
 
 main .item-list img{
+    float: right;
     width: 27%;
-    filter:drop-shadow(4px 0px 10px rgba(0, 0, 0, 0.341));
-    align-self: flex-start;
+    filter:drop-shadow(3px 0px 10px rgba(0, 0, 0, 0.173));
+    margin: 0 0 0 1vw;
 }
