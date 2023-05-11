@@ -21,24 +21,25 @@ body{
     padding: 1vh;
     display: flex;
     flex-direction: column;
-    border: 1px solid green;
+    background-color: aliceblue;
+    /* border: 1px solid green; */
 }
 
 header{
     width: 100%;
     height: 15%;
-    border: 1px solid green;
     display: flex;
     align-items: center;
     background-color: #99ebff;
     margin-bottom: 2.3vh;
     padding-right: 0.3vw;
+    /* border: 1px solid green; */
 }
 
 header .text-content{
     margin-left: auto;
     text-align: end;
-    color: black;
+    color: #089883;
 
     /* border: 1px solid green; */
 }
@@ -71,22 +72,22 @@ main .friends{
 }
 
 main .friends .friends-content{
-    border: 5px solid #095d72;
+    border: 5px solid #0e7566;
     height: 30vh;
-    background-color: #3bd1f7;
+    background-color: #29e6d9;
 }
 
 main .friends .friends-content .heading{
-    padding: 1vh 2vw;
+    padding: 1.7vh 0 0 3vw;
     font-size: 2.7em;
     font-weight: 400;
-    color: red;
-    margin-bottom: 2vh;
+    color: #089883;
+    margin-bottom: 4vh;
 }
 
 main .friends .friends-content .list{
-    padding:  0 3.8vw;
-    font-size: 1em;
+    padding:  0 0 0 5vw;
+    font-size: 1.1em;
     font-weight: 400;
     color: red;
     margin-bottom: 2vh;
@@ -109,18 +110,34 @@ main .items{
 
 main .item-list{
     padding: 1vh;
-    border: 5px solid green;
+    border: 5px solid rgb(149, 217, 221);
     height: fit-content;
     background-color: #ccf5ff;
 }
 
-main .item-list .heading{
+main .item-list h1{
     font-size: 1.8em;
     font-weight: 400;
-    color: red;
+    color: #089883;
     margin-bottom: 2vh;
 }
 
-main .item-list .heading .date{
+main .item-list .date{
     text-decoration: underline dotted;
+}
+
+main .text-img{
+    display: flex;
+}
+
+main .item-list p{
+    font-size: 1.2em;
+    text-align: justify;
+    padding: 0 1vw 0 0 ;
+}
+
+main .item-list img{
+    width: 27%;
+    filter:drop-shadow(4px 0px 10px rgba(0, 0, 0, 0.341));
+    align-self: flex-start;
 }
