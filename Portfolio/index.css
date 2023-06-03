@@ -1,5 +1,6 @@
 /* Colors{
-    black, white
+    black: #101010, #191919,
+    white
     pinks : #f9004d , #fcfc
     Blues : #60e4e6 , rgba(204, 255, 254, 0.8), 
     prom blues : #22dee1 , rgba(127, 254, 222, 0.8)
@@ -12,3 +13,126 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100svh;
+    background-color: #101010;
+}
+
+/* Header Starts */
+header{
+    width: 100%;
+    height: 12svh;
+    display: flex;
+    /* border: 2px solid red; */
+    background: rgba( 96, 228, 230, 0.25 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    padding: 10px 20px ;
+    position: fixed;
+}
+
+#logo{
+    /* border: 2px solid red; */
+    font-size: 2.5em;
+    font-weight: 900;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex: 1;
+    color: white;
+}
+
+span{
+    color: rgb(34, 222, 225);
+}
+
+ul{
+    font-size: 1.1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    list-style: none;
+    flex: 4;
+    padding: 10px;
+
+    /* border: 2px solid red; */
+
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+ul li a:hover{
+    color: rgb(34, 222, 225);
+}
+
+.like-btn{
+    flex: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* border: 2px solid red; */
+}
+
+.like-btn button{
+    font-size: 1.1em;
+    background-color: #22dee1;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 40px;
+    border: 0;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.like-btn button:hover{
+    background-color:#13ecf0;
+    transform: scale(1.15);
+}
+/* Header Ends*/
+
+/* About Starts */
+/* About Ends */
+
+/* About Starts */
+/* About Ends */
+
+/* Education Starts */
+/* Education Ends */
+
+/* Skills Starts */
+/* Skills Ends */
+
+/* Certification Starts */
+/* Certification Ends */
+
+/* Project Starts */
+/* Project Ends */
+
+/* Achievement Starts */
+/* Achievement Ends */
+
+/* Hire Me Starts */
+/* Hire Me Ends */
+
+/* Contact Ends */
+/* Contact Starts */
+
+/* Footer Starts */
+footer{
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    background-color: #191919;
+    color: #22dee1;
+    /* border: 2px solid red; */
+}
+/* Footer Ends */
