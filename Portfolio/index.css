@@ -176,6 +176,7 @@ ul li a:hover{
 
 /* About Starts */
 #about-sec{
+    background-color: #191919;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -188,15 +189,16 @@ ul li a:hover{
 }
 
 .about-img{
-    width: 35%;
-    height: 95vh;
+    width: 40%;
+    height: 80vh;
     overflow: hidden;
     border-radius: 20px;
     /* border: 2px solid red; */
 }
 
 .about-img img{
-    width: 100%;
+    float: right;
+    width: 80%;
     /* border: 2px solid red; */
 }
 
@@ -240,9 +242,7 @@ ul li a:hover{
     border: 2px solid transparent;
     border-radius: 30px;
     padding: 10px 25px;
-    transition: 0.4s;
-    
-    
+    transition: 0.4s; 
 }
 
 .about button:hover{
@@ -252,16 +252,286 @@ ul li a:hover{
 }
 /* About Ends */
 
-/* About Starts */
-/* About Ends */
-
 /* Education Starts */
+#edu-sec{
+    width: 100%;
+    height: 100vh;
+    background-color: #101010;
+    padding: 100px 0px;
+}
+
+#edu-sec .edu-title h2{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 75px;
+    font-weight: bold;
+    margin: 35px auto;
+    
+}
+
+#edu-sec .edu-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+
+#edu-sec .edu-cards{
+    height: 450px;
+    width: 345px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#edu-sec .edu-cards:hover{
+    box-shadow: inset 0px 0px 5px white,0px 0px 10px #000000 ;
+    transition: .2s;
+    transform: scale(1.1);
+}
+
+.edu-cards i{
+    display: block;
+    font-size: 40px;
+    text-align: center;
+    margin: 25px 0px;
+    color: #22dee1;
+}
+#edu-sec .edu-cards p:nth-child(2){
+    color: white;
+    margin: 10px 0px 6px 0px;
+    font-size: 24px;
+    font-weight: bold;
+}
+#edu-sec .edu-cards p:nth-child(3){
+    color: white;
+    margin: 0px 0px 35px 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#edu-sec .edu-cards p:nth-child(4),p:nth-child(7),p:nth-child(10){
+    text-align: left;
+    color: white;
+    margin: 20px 0px 5px 0px;
+}
+
+#edu-sec .edu-cards p:nth-child(5),p:nth-child(8),p:nth-child(11){
+    color:#efbfbf;
+    font-size: 17px;
+    margin: 0px 0px 20px 0px;
+}
 /* Education Ends */
 
 /* Skills Starts */
+#skills-sec{
+    width: 100%;
+    padding: 100px 50px;
+    background-color: #191919;
+}
+
+#skills-sec span{
+    color: #22dee1;
+}
+
+#skills-sec .skill-title h2{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 75px;
+    font-weight: bold;
+    margin: 25px auto;
+}
+
+.skill-box{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+    
+}
+
+.skill-sub-box{
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: center;
+}
+.skill-sub-box .t-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 130px;
+    width: 235px;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 15px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #22dee1;
+    color: #101010;
+    font-size: 17px;
+    box-shadow: inset 0px 0px 50px #000000;
+}
+
+.skill-sub-box .cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 235px;
+    padding: 20px 35px;
+    background: #101010;
+    border-radius: 20px;
+    margin: 8px;
+    overflow: hidden;
+    text-align: center;
+    color: #22dee1;
+    /* box-shadow: inset 0px 0px 20px #000000; */
+}
+
+.skill-sub-box .cards:hover{
+    font-size: 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    box-shadow: 0px 0px 5px white,0px 0px 10px #000000,0px 0px 10px #22dee1  ;
+    transition: .2s;
+}
+
+#photoshop:hover{
+    background-image: url("./icons/photoshop.png");  
+}
+#illustrator:hover{
+    background-image: url("./icons/illustrator.png"); 
+}
+#premier:hover{
+    background-image: url("./icons/premier.png");   
+}
+
+#python:hover{
+    background-image: url("./icons/python.png");  
+}
+
+#cpp:hover{
+    background-image: url("./icons/cpp.png");   
+}
+
+#html:hover{
+    background-image: url("./icons/html.png");  
+}
+
+#css:hover{
+    background-image: url("./icons/css.png");   
+}
+
+#js:hover{
+    background-image: url("./icons/js.png");
+}
+
+#webcrawl:hover{
+    background-image: url("./icons/webcrawl.png");
+}
+
+#frontend:hover{
+    background-image: url("./icons/front-end.png");
+}
+
+
 /* Skills Ends */
 
 /* Certification Starts */
+#certificate-sec{
+    width: 100%;
+    background-color: #101010;
+    padding: 100px 0px;
+    box-shadow:  inset 0px 0px 20px #000000 ;
+    
+}
+
+#certificate-sec .certif-title h2{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 75px;
+    font-weight: bold;
+    margin: 25px auto;
+    /* border: 2px solid red; */
+}
+
+.certif-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+        /* border: 2px solid red; */
+}
+
+#certificate-sec .cards{
+    display: flex;
+    flex-direction: column;
+    height: 420px;
+    width: 300px;
+    padding: 20px 17px 21px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: inset 0px 0px 20px #000000, inset 0px 0px 60px #000000 ;
+    
+}
+
+#certificate-sec .cards .certif-pic{
+    /* border: 2px solid green; */
+    min-height: 200px; 
+    margin-bottom: 30px;  
+}
+.certif-pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#certificate-sec .cards .certif-text {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#certificate-sec .cards .certif-text p{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 22px;
+    /* margin-bottom: 70px; */
+}
+
+
+.certif-text a{
+    width: 175px;
+    background-color: #22dee1;
+    /* #22dee1    blue color  */
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    padding: 12px 25px;
+    margin-top: auto;
+    transition: .3s;
+}
+
+.certif-text a:hover{
+    background-color: transparent;
+    border: 2px solid #22dee1;
+    cursor: pointer;
+
+}
 /* Certification Ends */
 
 /* Project Starts */
