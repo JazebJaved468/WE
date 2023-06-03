@@ -1,0 +1,14 @@
+/* Colors{
+    black, white
+    pinks : #f9004d , #fcfc
+    Blues : #60e4e6 , rgba(204, 255, 254, 0.8), 
+    prom blues : #22dee1 , rgba(127, 254, 222, 0.8)
+} */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
