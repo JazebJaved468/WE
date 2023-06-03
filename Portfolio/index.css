@@ -16,47 +16,48 @@
 body{
     display: flex;
     flex-direction: column;
-    height: 100svh;
+    height: fit-content;
     background-color: #101010;
 }
 
 /* Header Starts */
 header{
-    width: 100%;
-    height: 12svh;
+    height: 12vh;
     display: flex;
     /* border: 2px solid red; */
     background: rgba( 96, 228, 230, 0.25 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     padding: 10px 20px ;
-    position: fixed;
+    /* position: fixed; */
 }
 
 #logo{
     /* border: 2px solid red; */
-    font-size: 2.5em;
-    font-weight: 900;
+    font-size: 2.8em;
+    font-weight: 700;
     display: flex;
     align-items: flex-end;
-    justify-content: center;
-    flex: 1;
+    justify-content: flex-end;
+    flex: 0.7;
+    padding: 0 40px 0  0;
     color: white;
 }
 
-span{
+header span{
     color: rgb(34, 222, 225);
 }
 
-ul{
-    font-size: 1.1em;
+ul{ 
+    font-size: 1em;
+    font-weight: 500;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: flex-end;
     list-style: none;
-    flex: 4;
-    padding: 10px;
+    flex: 2.5;
+    padding: 10px 0px;
 
     /* border: 2px solid red; */
 
@@ -84,7 +85,7 @@ ul li a:hover{
     font-size: 1.1em;
     background-color: #22dee1;
     color: white;
-    padding: 15px 25px;
+    padding: 13px 30px;
     border-radius: 40px;
     border: 0;
     cursor: pointer;
@@ -97,7 +98,158 @@ ul li a:hover{
 }
 /* Header Ends*/
 
+/* Intro Starts */
+#intro-sec{
+    width: 100%;
+    height: 88vh;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+    background-color: #191919;
+}
+
+.content{
+    width: 40vw;
+    /* border: 2px solid red; */
+}
+
+.content h1{
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 75px;
+}
+
+.content h3{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.content h4{
+    color: #efbfbf;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.newsletter form{
+    width: 380px;
+    max-width: 100%;
+    position: relative;                          
+}
+
+.newsletter form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid #22dee1;
+    outline: none;
+    border-radius: 20px;
+}
+
+.newsletter form input:last-child{
+    position:absolute;                    
+    display: inline-block;
+    outline: none;
+    border:none;
+    padding: 11px 30px;
+    border-radius: 30px;
+    background-color: #22dee1;
+    color: white;
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+    top: 6px;
+    right: 6px;
+    cursor: pointer;
+}
+.content-img{
+    /* border: 2px solid red; */
+    width: 40vw;
+    height: 100%;
+}
+
+.content-img img{
+    width: 100%;
+
+}
+/* Intro Ends */
+
 /* About Starts */
+#about-sec{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /* border: 2px solid red; */
+    overflow: hidden;
+    padding: 100px 100px;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.about-img{
+    width: 35%;
+    height: 95vh;
+    overflow: hidden;
+    border-radius: 20px;
+    /* border: 2px solid red; */
+}
+
+.about-img img{
+    width: 100%;
+    /* border: 2px solid red; */
+}
+
+.about{
+
+    width: 40%;
+    /* border: 2px solid red; */
+}
+
+.about span{
+    color: #22dee1;
+}
+
+.about h2{
+    color: white;
+    font-size: 75px;
+    margin-bottom: 20px;
+}
+
+.about h5{
+    color: white;
+    font-size: 22px;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.about p{
+    color: #efbfbf;
+    /* text-align: justify; */
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.about button{
+    background-color: #22dee1;
+    /* #22dee1    blue color  */
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    padding: 10px 25px;
+    transition: 0.4s;
+    
+    
+}
+
+.about button:hover{
+    background-color: transparent;
+    border: 2px solid #22dee1;
+    cursor: pointer;
+}
 /* About Ends */
 
 /* About Starts */
@@ -134,5 +286,9 @@ footer{
     background-color: #191919;
     color: #22dee1;
     /* border: 2px solid red; */
+}
+
+footer span{
+    color: white;
 }
 /* Footer Ends */
