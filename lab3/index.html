@@ -11,7 +11,7 @@
     <h2>Continental Hotel Reservation Form</h2>
     <br />
     <div id="form">
-      <form action="dummy.php">
+      <form action="">
         <table id="table">
           <tr>
             <td>Name</td>
@@ -20,7 +20,7 @@
             </td>
           </tr>
           <tr>
-            <td>eMail</td>
+            <td>E-mil</td>
             <td>
               <input
                 type="email"
@@ -59,11 +59,11 @@
           <tr>
             <td>Room Type</td>
             <td>
-              <input type="radio" id="single" value="Single" />
+              <input type="radio" id="single" name="room" value="Single" />
               <label for="single">Single</label>
-              <input type="radio" id="double" value="Double" />
+              <input type="radio" id="double" name="room" value="Double" />
               <label for="double">Double</label><br />
-              <input type="radio" id="pres_suite" value="Presidential Suite" />
+              <input type="radio" id="pres_suite" name="room" value="Presidential Suite" />
               <label for="pres_suite">Presidential Suite</label>
             </td>
           </tr>
@@ -81,7 +81,7 @@
           <tr>
             <td>Mode Of Payment</td>
             <td>
-              <input type="checkbox" id="cash" value="cash" />
+              <input type="checkbox" id="cash" value="cash"  />
               <label for="cash">Cash</label>
               <input type="checkbox" id="check" value="check" />
               <label for="check">Check</label><br />
@@ -100,7 +100,7 @@
             <td>
               <!-- <input type="submit" value="send-data"> -->
             </td>
-            <td><button>Send Data</button></td>
+            <td><button type="submit">Send Data</button></td>
           </tr>
         </table>
       </form>
