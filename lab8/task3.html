@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header><h1>Sales Calculator</h1></header>
+    <main>
+        <table>
+            <tr>
+                <td>
+                    <label for="entry">Entry No:</label>
+                </td>
+                <td>
+                    <input type="text" name="" id="entry">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="empno">Employee No:</label>
+                </td>
+                <td>
+                    <input type="text" name="" id="empno">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="prodno">Product No:</label>
+                </td>
+                <td>
+                    <input type="text" name="" id="prodno">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="prodprice">Product Price: $</label>
+                </td>
+                <td>
+                    <input type="text" name="" id="prodprice">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;"><input type="button" id="submit" onclick="createRow()" value="Enter Record"></td>
+            </tr>
+        </table>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <td>Product#</td>
+                    <td>Employee 1</td>
+                    <td>Employee 2</td>
+                    <td>Employee 3</td>
+                    <td>Employee 4</td>
+                    <td><strong>Total</strong></td>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td id="e1total"></td>
+                    <td id="e2total"></td>
+                    <td id="e3total"></td>
+                    <td id="e4total"></td>
+                    <td id="subtotal"></td>
+
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+
+    <script>
+
+        function createRow()
+        {
+            let entrynoVal = document.getElementById("entry");
+            let empnoVal = document.getElementById("empno");
+            let prodnoVal = document.getElementById("prodno");
+            let prodpriceVal = document.getElementById("prodprice");
+
+            if(entrynoVal.value === "" || empnoVal.value === "" || prodnoVal.value === "" || prodpriceVal.value === "")
+                return;
+
+            const btn = document.getElementById("submit");
+            const tfoot = document.querySelector("tfoot");
+            const e1total = document.getElementById("e1total");
+            const e2total = document.getElementById("e2total");
+            const e3total = document.getElementById("e3total");
+            const e4total = document.getElementById("e4total");
+            let row = document.getElementById(`prod-${prodnoVal.value}`);
+            
+            let prodno;
+            let e1;
+            let e2;
+            let e3;
+            let e4;
+            let total;
+
+
+
+            console.log(row);
+            
+            if(row == null)
+            {
+                row = document.createElement("tr");
+
+                prodno = document.createElement("td");
+                e1 = document.createElement("td");
+                e2 = document.createElement("td");
+                e3 = document.createElement("td");
+                e4 = document.createElement("td");
+                total = document.createElement("td");
+                
+                e1.classList.add("e1")
+                e2.classList.add("e2")
+                e3.classList.add("e3")
+                e4.classList.add("e4");
+                total.classList.add("totaly");
+
+                e1.innerHTML = "0";
+                e2.innerHTML = "0";
+                e3.innerHTML = "0";
+                e4.innerHTML = "0";
+                total.innerHTML = "0";
+
+                console.log(row);
+            }
+            else
+            {
+                const rowItems = document.querySelectorAll(`#prod-${prodnoVal.value} > td`);
+                console.log(rowItems);
+                prodno = rowItems[0];
+                e1 = rowItems[1];
+                e2 = rowItems[2];
+                e3 = rowItems[3];
+                e4 = rowItems[4];
+                total = rowItems[5];
+            }
+
+
+            prodno.innerHTML = prodnoVal.value;
+            row.setAttribute("id", `prod-${prodnoVal.value}`);
+
+            row.appendChild(prodno);
+            row.appendChild(e1);
+            row.appendChild(e2);
+            row.appendChild(e3);
+            row.appendChild(e4);
+            row.appendChild(total);
+            
+
+            if(empnoVal.value == 1)
+            {
+                e1.innerHTML = empnoVal.value;
+            }
+            else if(empnoVal.value == 2)
+            {
+                e2.innerHTML = empnoVal.value;
+            }
+            else if(empnoVal.value == 3)
+            {
+                e3.innerHTML = empnoVal.value;
+            }
+            else if(empnoVal.value == 4)
+            {
+                e4.innerHTML = empnoVal.value;
+            }
+            
+            total.innerHTML = +e1.innerHTML + +e2.innerHTML + +e3.innerHTML + +e4.innerHTML;
+
+            tfoot.before(row);
+
+            
+            let sum = 0;
+            
+            const e1Vals = document.querySelectorAll(".e1");
+            e1Vals.forEach(element => {
+                sum += +element.innerHTML;
+            });
+            e1total.innerHTML = sum;
+
+            const e2Vals = document.querySelectorAll(".e2");
+            sum = 0;
+            e2Vals.forEach(element => {
+                sum += +element.innerHTML;
+            });
+            e2total.innerHTML = sum;
+
+            const e3Vals = document.querySelectorAll(".e3");
+            sum = 0;
+            e3Vals.forEach(element => {
+                sum += +element.innerHTML;
+            });
+            e3total.innerHTML = sum;
+
+            const e4Vals = document.querySelectorAll(".e4");
+            sum = 0;
+            e4Vals.forEach(element => {
+                sum += +element.innerHTML;
+            });
+            e4total.innerHTML = sum;
+
+            const totaly = document.querySelectorAll(".totaly");
+
+            sum = 0;
+
+            totaly.forEach(i => {sum += +i.innerHTML});
+
+            document.getElementById("subtotal").innerHTML = +sum + +e1total.innerHTML + +e2total.innerHTML + +e3total.innerHTML + +e4total.innerHTML;
+
+            entrynoVal.value = "";
+            empnoVal.value = "";
+            prodnoVal.value = "";
+            prodpriceVal.value = "";
+        }
+    </script>
+</body>
+</html>
