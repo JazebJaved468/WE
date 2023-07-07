@@ -1,0 +1,201 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    /* color: rgb(51, 51, 98); */
+}
+
+/* navbar starts */
+.navbar{
+    width: 100%;
+    display: flex;
+    /* border:  2px solid red; */
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: white;
+    color: rgb(51, 51, 98);;
+    font-weight: 400;
+    padding: 1.5vh;
+}
+
+.navbar .name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navbar .name .org-name{
+    font-weight: 900;
+}
+
+.navbar .login{
+    display: flex;
+    gap: 10px;
+}
+
+.navbar .links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 50px;
+    cursor: pointer;
+}
+
+.navbar .links li:hover{
+    color:rgb(144, 144, 153) ;
+    
+}
+
+/* Hero section starts */
+
+.hero-img{
+    width: 100%;
+    position: absolute;
+    height: 90vh;
+    z-index: -1;
+
+}
+
+.hero-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.hero{
+    z-index: 100;
+    width: 100%;
+    height: 90vh;
+    /* border:  2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 250px;
+}
+
+.hero .showcase{
+    width: 18%;
+    /* border:  2px solid red; */
+    background-color: rgba(51, 51, 98, 0.803);
+    color: white;
+    padding: 3.5vh 1.5vw;
+    align-self: flex-end;
+    margin-bottom: -100px;
+
+}
+
+.hero .showcase h2{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px ;
+}
+
+.hero .showcase .desc{
+    font-weight: 300;
+    font-size: 14px;
+    margin-bottom: 20px ;
+    border-bottom: 2px solid white;
+    padding-bottom: 15px;
+}
+
+.hero .showcase .price{
+    font-weight: 600;
+    margin-bottom: 30px ;
+    text-align: center;
+}
+
+.hero .showcase a{
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    cursor: pointer;
+    padding: 3px 15px;
+    font-size: 14px;
+    align-self: center;
+}
+
+.hero .contact{
+    width: 20%;
+    /* border:  2px solid red; */
+    background-color: rgb(51, 51, 98);
+    color: white;
+    padding: 1vh 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: flex-start;
+
+}
+
+
+/* cards section starts */
+.cards{
+    width: 100%;
+    height: fit-content;
+    /* border:  2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 170px 50px 100px;
+}
+
+.cards h1{
+    color: rgb(51, 51, 98);
+    margin-bottom: 10vh;
+}
+
+.cards .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.cards .container .card{
+    width: 17%;
+    height: fit-content;
+    /* border: 2px solid red; */
+    padding: 10px;
+}
+
+.cards .container .card img{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 4vh;
+}
+
+.cards .container .card h3{
+    margin-bottom: 2vh;
+    color: rgb(51, 51, 98);
+}
+
+.cards .container .card .price{
+    margin-bottom: 4vh;
+    color: rgb(51, 51, 98);
+}
+
+.cards .container .card .rooms{
+    margin-bottom: 3vh;
+    color: rgb(219, 80, 76);
+}
+
+.cards .container .card .desc{
+    margin-bottom: 6vh;
+    color: rgb(51, 51, 98);
+    font-size: 14px;
+}
+
+.cards .container .card a{  
+    color: rgb(51, 51, 98);
+    text-decoration: none;
+    border: 2px solid;
+    padding: 3px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+
+}
