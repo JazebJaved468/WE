@@ -52,6 +52,7 @@ main{
     align-items: center;
     color: aliceblue;
     font-size: 50px;
+    /* transition: all 1s; */
 }
 
 #clear,#plus-minus,#percent{
